@@ -137,3 +137,5 @@ Vectors for the cross product must have exactly 3 elements.
 Matrix multiplication is only allowed when dimensions are compatible.
 
 Median computation requires a sorted array.
+### Author 
+Gwanulaga bryan 
