@@ -115,6 +115,17 @@ void produitvectoriel(int A[3], int B[3] ,int C[3])
     C[1]= A[2]*B[0] - A[0]*B[2];
     C[2]= A[0]*B[1] - A[1]*B[0];
 }
+void produitMatVec(int A[MAX][MAX], int B[MAX], int C[MAX], int m, int n) 
+{
+    for (int i = 0; i < m; i++) 
+    {
+        C[i] = 0; 
+        for (int j = 0; j < n; j++) 
+        {
+            C[i] += A[i][j] * B[j];
+        }
+    }
+}
 void lirematrice(int A[MAX][MAX],int m,int n)
 {
     

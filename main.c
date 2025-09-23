@@ -20,7 +20,7 @@ int main() {
         printf("6- Array median (median)\n");
         printf("7- Array inversion (inverse)\n");
         printf("8- Vector product \n");
-        printf("9- 2x2 Matrix determinant (Produitmatriciel)\n");
+        printf("9- Matrix Vector multiplication (Produit matrix et vecteur)\n");
         printf("10- Exit\n");
         printf("Enter your choice : \n");
         scanf("%d",&choice);
@@ -112,7 +112,17 @@ int main() {
                 ecrirevecteur(MatC,3);
                 printf("\n");
                 break;
-            case 9:   
+            case 9:
+                printf("Enter the number of rows and columns of the matrix:\n");
+                scanf("%d %d", &row, &column);
+                printf("Enter the elements of the matrix:\n");
+                lirematrice(MatA, row, column);
+                printf("Enter the elements of the vector (size %d):\n", column);
+                lirevecteur(MatC, column);
+                int prod[MAX];
+                produitMatVec(MatA, MatC, prod, row, column);
+                printf("Resulting vector after multiplication:\n");
+                ecrirevecteur(prod, row);
                 break;
             case 10:
                 printf("Exiting ... \n");

@@ -13,7 +13,7 @@ bool esttrie(int A[MAX],int m);
 float median(int A[MAX], int n);
 void inverse(int A[MAX], int n);
 void produitvectoriel(int A[3], int B[3] ,int C[3]);
-int produitvectMat();
+void produitMatVec(int A[MAX][MAX], int B[MAX], int C[MAX], int m, int n);
 void ecrirematrice(int A[MAX][MAX],int m,int n);
 void lirematrice(int A[MAX][MAX],int m,int n);
 void lirevecteur(int A[MAX],int a);
